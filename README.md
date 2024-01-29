@@ -20,6 +20,11 @@ If you are planning to use this Automation script. Thanks!
     $ bash load.sh &
     $ python3 kill_process.py
     ```
+2. Setup CronJob for logrotate
+   ```bash
+#logrotate for python process for high cpuload ps
+0 0 */15 * * /bin/bash /root/python-script/log-rotate.sh
+   ```
 
 ## License
 
